@@ -29,6 +29,7 @@ if (isNaN(emailUtente)) {
   } else {
     console.log("Non ti sei ancora registrato. Devi avere un account per usufruire del nostro servizio");
   }
+  
 } else {
   console.log("Inserire un' E-mail valida");
 }
