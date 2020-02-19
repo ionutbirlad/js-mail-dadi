@@ -63,9 +63,9 @@ button{
   padding: 20px 50px;
   border-radius: 5px;
   border: none;
-  background: radial-gradient(#0652DD, #EA2027, #FFC312, #009432);
+  background: linear-gradient(90deg, #0652DD, #EA2027, #FFC312, #009432);
   background-size: 400% 400%;
-	animation: gradient 3s ease infinite;
+	animation: gradient 1s ease infinite;
 }
 
 #results{
