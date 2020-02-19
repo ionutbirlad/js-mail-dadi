@@ -8,19 +8,22 @@ var numeroAvversario = 0;
 
 function doFunction() {
   // Generazione dei due numeri
-  numeroUtente = Math.round(Math.random() * 100);
+  numeroUtente = Math.round(Math.random() * 10);
   // console.log("Il tuo punteggio: " + numeroUtente);
   document.getElementById('your-score').innerHTML = " " + numeroUtente;
-  numeroAvversario = Math.round(Math.random() * 100);
+  numeroAvversario = Math.round(Math.random() * 10);
   // console.log("Punteggio del tuo avversario: " + numeroAvversario);
   document.getElementById('opp-score').innerHTML = " " + numeroAvversario;
 
   // Confronto dei punteggi e comunicazione a schermo
   if (numeroUtente > numeroAvversario) {
-    console.log("Congratulazioni hai vinto!!");
+    // console.log("Congratulazioni hai vinto!!");
+    document.getElementById('results').innerHTML = "Congratulazioni hai vinto!!";
   } else if (numeroUtente < numeroAvversario) {
-    console.log("Purtroppo hai perso..");
+    // console.log("Purtroppo hai perso..");
+    document.getElementById('results').innerHTML = "Purtroppo hai perso..";
   } else {
-    console.log("Avete totalizzato lo stesso punteggio");
+    // console.log("Avete totalizzato lo stesso punteggio");
+    document.getElementById('results').innerHTML = "Avete totalizzato lo stesso punteggio";
   }
 }
