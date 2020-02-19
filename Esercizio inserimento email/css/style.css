@@ -7,21 +7,43 @@
 
 body{
   background: #34495e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  width: 405px;
+  height: 230px;
+  perspective: 600px;
+  position: relative;
+}
+
+.wrapper{
+  width: 410px;
+  height: 235px;
+  background: red;
+  border-radius: 10px;
+  background: #2f364099;
+  transform: translateZ(-20px);
+  position: absolute;
 }
 
 .card{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 550px;
+  width: 400px;
+  height: 225px;
   background: #f1f1f1;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51%, -52%);
 }
 
 .card span{
