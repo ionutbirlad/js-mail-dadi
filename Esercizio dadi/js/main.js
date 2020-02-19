@@ -11,3 +11,12 @@ numeroUtente = Math.round(Math.random() * 100);
 console.log("Il tuo punteggio: " + numeroUtente);
 numeroAvversario = Math.round(Math.random() * 100);
 console.log("Punteggio del tuo avversario: " + numeroAvversario);
+
+// Confronto dei punteggi e comunicazione a schermo
+if (numeroUtente > numeroAvversario) {
+  console.log("Congratulazioni hai vinto!!");
+} else if (numeroUtente < numeroAvversario) {
+  console.log("Purtroppo hai perso..");
+} else {
+  console.log("Avete totalizzato lo stesso punteggio");
+}
