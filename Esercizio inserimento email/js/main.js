@@ -25,11 +25,14 @@ if (isNaN(emailUtente)) {
 
   // Messaggi in base alla situazione
   if (corrispondenza != undefined) {
-    console.log("Bentornato!!");
+    // console.log("Bentornato!!");
+    document.getElementById('text').innerHTML = "Bentornato!!";
   } else {
-    console.log("Non ti sei ancora registrato. Devi avere un account per usufruire del nostro servizio");
+    // console.log("Non ti sei ancora registrato. Devi avere un account per usufruire del nostro servizio");
+    document.getElementById('text').innerHTML = "Non ti sei ancora registrato. Devi avere un account per usufruire del nostro servizio";
   }
-  
+
 } else {
-  console.log("Inserire un' E-mail valida");
+  // console.log("Inserire un' E-mail valida");
+  document.getElementById('text').innerHTML = "Inserire un' E-mail valida";
 }
