@@ -9,9 +9,11 @@ var numeroAvversario = 0;
 function doFunction() {
   // Generazione dei due numeri
   numeroUtente = Math.round(Math.random() * 100);
-  console.log("Il tuo punteggio: " + numeroUtente);
+  // console.log("Il tuo punteggio: " + numeroUtente);
+  document.getElementById('your-score').innerHTML = " " + numeroUtente;
   numeroAvversario = Math.round(Math.random() * 100);
-  console.log("Punteggio del tuo avversario: " + numeroAvversario);
+  // console.log("Punteggio del tuo avversario: " + numeroAvversario);
+  document.getElementById('opp-score').innerHTML = " " + numeroAvversario;
 
   // Confronto dei punteggi e comunicazione a schermo
   if (numeroUtente > numeroAvversario) {
