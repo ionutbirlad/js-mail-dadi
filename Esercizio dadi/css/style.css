@@ -3,3 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button{
+  cursor: pointer;
+  padding: 20px 40px;
+}
