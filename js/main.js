@@ -22,6 +22,7 @@ for (var i = 0; i < databaseEmail.length; i++) {
   }
 }
 
+// Messaggi in base alla situazione
 if (corrispondenza != undefined) {
   console.log(corrispondenza + " sei stato invitato!!");
 } else {
